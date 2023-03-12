@@ -1,0 +1,1 @@
+import home from './style/pages/main.scss'

@@ -1,0 +1,7 @@
+@mixin basic-block-size {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1280px) 1fr;
+  .container {
+    grid-column: 2 / 3;
+  }
+}

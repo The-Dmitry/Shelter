@@ -1,0 +1,25 @@
+.header {
+  // @include basic-block-size;
+  height: 80px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+}
+.logo__title {
+}
+.logo__subtitle {
+}
+.navigation {
+  display: flex;
+  width: 100%;
+  max-width: 440px;
+}
+.navigation__item {
+}
+.navigation__link {
+}
