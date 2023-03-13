@@ -1,4 +1,28 @@
+.not-only {
+  padding-top: 120px;
+  height: 500px;
+  @include dark-background;
+}
+
+.container {
+}
+.not-only__content {
+}
+.title {
+}
 .not-only__title {
   letter-spacing: normal;
   font-size: 4.4rem;
+  font-weight: 400;
+  line-height: 130%;
+  color: $color-light;
+}
+.not-only__text {
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: $color-grey;
+}
+.button {
 }

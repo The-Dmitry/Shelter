@@ -1,0 +1,29 @@
+.footer {
+  @include dark-background;
+}
+.container {
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+}
+
+.footer-contact {
+}
+.title {
+}
+.footer__title {
+  color: $color-light;
+}
+.footer-contact__email {
+}
+.footer-contact__phone {
+}
+.footer-address {
+}
+.footer-address__address {
+}

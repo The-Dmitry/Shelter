@@ -1,0 +1,33 @@
+.in-addition {
+  @include alternative-background;
+}
+.container {
+}
+.in-additiont__content {
+}
+.title {
+}
+.in-addition__title {
+}
+.in-addition__text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-title;
+}
+.card-number {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-dark-title;
+}
+.about__policy {
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: $color-dark-italic;
+}

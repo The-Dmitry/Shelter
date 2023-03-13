@@ -1,7 +1,9 @@
 .header {
   // @include basic-block-size;
-  height: 80px;
+  height: 120px;
+  margin-bottom: -120px;
   &__container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,10 +11,22 @@
 }
 
 .logo {
+  font-style: normal;
 }
 .logo__title {
+  color: $color-primary;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
 }
 .logo__subtitle {
+  color: $color-light;
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.1em;
 }
 .navigation {
   display: flex;
@@ -22,4 +36,9 @@
 .navigation__item {
 }
 .navigation__link {
+  font-family: 'Arial';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 160%;
+  color: $color-grey;
 }
