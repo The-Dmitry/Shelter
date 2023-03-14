@@ -1,5 +1,5 @@
 .button {
-  padding: 15px 45px;
+  padding: 15px 40px;
   background: $color-primary;
   border-radius: 100px;
   font-weight: 400;
@@ -7,4 +7,6 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: $color-dark-buttons;
+  outline: none;
+  border: none;
 }

@@ -1,16 +1,27 @@
 .not-only {
   padding-top: 120px;
-  height: 500px;
+  // height: 700px;
   @include dark-background;
+  .container {
+    height: 100%;
+    background: url(../../images/mainPuppy.png) 100% 0 / contain no-repeat;
+    padding: 150px 0 252px 0;;
+  }
+  
+  &__button {
+    max-width: 208px;
+  }
 }
 
 .container {
 }
 .not-only__content {
+  @include articles(42px, 460px);
 }
 .title {
 }
 .not-only__title {
+  max-width: 320px;
   letter-spacing: normal;
   font-size: 4.4rem;
   font-weight: 400;
@@ -25,4 +36,5 @@
   color: $color-grey;
 }
 .button {
+
 }

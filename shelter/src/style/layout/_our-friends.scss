@@ -1,3 +1,15 @@
 .our-friends {
   @include alternative-background;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+.our-friends__title {
+  max-width: 370px;
+  margin: 0 auto;
+  text-align: center;
 }

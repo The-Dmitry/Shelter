@@ -1,13 +1,17 @@
 .about {
-}
-.container {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    background: url(../../images/aboutPets.png) 25% 0 / contain no-repeat;
+  }
+
 }
 .about__content {
+  @include articles(25px, 435px);
 }
 .title {
 }
-.our-friends__title {
-}
+
 .about__text {
   font-family: 'Arial';
   font-weight: 400;

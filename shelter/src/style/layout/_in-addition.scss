@@ -1,9 +1,13 @@
 .in-addition {
   @include alternative-background;
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    background: url(../../images/additionDog.png) 25% 0 / contain no-repeat;
+  }
 }
-.container {
-}
-.in-additiont__content {
+.in-addition__content {
+  @include articles(20px, 385px)
 }
 .title {
 }

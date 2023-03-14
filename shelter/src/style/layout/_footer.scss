@@ -1,10 +1,19 @@
 .footer {
+  padding-top: 56px;
+  height: 350px;
   @include dark-background;
-}
-.container {
+  .container {
+    display: flex;
+    gap: 160px;
+    background: url(../../images/footerPuppy.png) 100% 0 / contain no-repeat;
+  }
+
 }
 
 .footer-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 400;
   font-size: 2rem;
   line-height: 115%;
@@ -12,18 +21,34 @@
   color: $color-primary;
 }
 
-.footer-contact {
+.footer-info {
+  @include articles(40px, 300px)
+}
+.footer-info__contact {
 }
 .title {
 }
 .footer__title {
-  color: $color-light;
 }
+
 .footer-contact__email {
+  &::before {
+    content: url(../../images/icons/icon-email.svg);
+  }
 }
 .footer-contact__phone {
+  &::before {
+    content: url(../../images/icons/icon-phone.svg);
+  }
 }
-.footer-address {
+.footer-info__address {
 }
 .footer-address__address {
+  &::before {
+    content: url(../../images/icons/icon-marker.png);
+  }
+}
+
+.footer__title {
+  color: $color-light;
 }

@@ -13,3 +13,10 @@
 @mixin alternative-background {
   background: #F6F6F6;
 }
+
+@mixin articles($gap, $width) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  max-width: $width;
+}
