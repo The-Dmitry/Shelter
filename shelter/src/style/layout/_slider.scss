@@ -1,0 +1,48 @@
+.our-friends__slider {
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.slider__row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 990px;
+  width: 100%;
+}
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 270px;
+  width: 100%;
+  border: 1px solid black;
+  background: #FAFAFA;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.slider__image {
+  position: relative;
+  width: 100%;
+  padding: 0 0 100% 0;
+}
+.slider-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.slider__text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: $color-dark-title;
+}
+.slider__button {
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: 2px solid $color-primary;
+}
