@@ -1,0 +1,34 @@
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 270px;
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.pet-card__image {
+  position: relative;
+  width: 100%;
+  padding: 0 0 100% 0;
+}
+.pet-card-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.pet-card__text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: $color-dark-title;
+}
+.pet-card__button {
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: 2px solid $color-primary;
+}

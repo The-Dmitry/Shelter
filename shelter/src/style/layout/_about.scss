@@ -2,14 +2,18 @@
   .container {
     display: flex;
     justify-content: flex-end;
-    background: url(../../images/aboutPets.png) 25% 0 / contain no-repeat;
+    background: url(../../images/aboutPets.png) 19.5% 43.5% / 25% no-repeat;
+    padding-bottom: 114px;
   }
 
 }
 .about__content {
-  @include articles(25px, 435px);
+  @include articles(25px, 432px);
+  margin: 92px 173px 0 0;
 }
-.title {
+.about__title {
+  max-width: 370px;
+
 }
 
 .about__text {

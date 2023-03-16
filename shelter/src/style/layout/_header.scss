@@ -1,7 +1,7 @@
 .header {
   // @include basic-block-size;
-  height: 120px;
-  margin-bottom: -120px;
+  height: 180px;
+  margin-bottom: -180px;
   &__container {
     height: 100%;
     display: flex;
@@ -12,6 +12,9 @@
 
 .logo {
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .logo__title {
   color: $color-primary;

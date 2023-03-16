@@ -1,4 +1,5 @@
 .our-friends {
+  padding: 81px 40px 96px 40px;
   @include alternative-background;
   .container {
     display: flex;
@@ -8,8 +9,10 @@
   }
 }
 
+
+
 .our-friends__title {
-  max-width: 370px;
+  max-width: 400px;
   margin: 0 auto;
   text-align: center;
 }

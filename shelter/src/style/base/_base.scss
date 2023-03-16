@@ -9,7 +9,13 @@ html {
   width: 100%;
   max-width: 1200px;
   height: 100%;
-  // padding: 0 40px;
+}
+
+.section,
+.footer,
+.header {
+  padding: 0 40px;
+  
 }
 
 .title {

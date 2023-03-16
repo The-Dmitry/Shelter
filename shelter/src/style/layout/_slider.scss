@@ -1,48 +1,105 @@
 .our-friends__slider {
 }
+
 .slider {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
   width: 100%;
 }
-.slider__row {
+
+.slider__container {
+  position: relative;
+  overflow: hidden;
+  order: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 990px;
   width: 100%;
 }
-.slider__item {
+
+
+.slider__next {
+  order: 3;
+  
+}
+.slider__prev {
+  order: 1;
+  transform: rotate(180deg);
+}
+.slider-button {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
-  max-width: 270px;
-  width: 100%;
-  border: 1px solid black;
-  background: #FAFAFA;
-  border-radius: 9px;
-  overflow: hidden;
-}
-.slider__image {
+  border: 2px solid $color-primary;
+  border-radius: 100px;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
   position: relative;
-  width: 100%;
-  padding: 0 0 100% 0;
+  &::after {
+    content: url(../../images/icons/arrow.svg);
+  }
 }
-.slider-photo {
+
+.slider__row {
+  position: relative;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  animation: 1s ease-in-out;
+}
+
+/* Slider cards you can find in components/pets-card*/
+
+
+// Animation
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  // animation-direction: reverse;
+}
+
+
+.from-left {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  animation-name: left;
+  animation-direction: reverse;
 }
-.slider__text {
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.3rem;
-  letter-spacing: 0.06em;
-  color: $color-dark-title;
+.from-right {
+  position: absolute;
+  top: 0;
+  animation-name: right;
+  animation-direction: reverse;
 }
-.slider__button {
-  margin-bottom: 30px;
-  background-color: transparent;
-  border: 2px solid $color-primary;
+
+
+
+
+@keyframes left {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -120%;
+
+  }
+}
+
+@keyframes right {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 120%;
+
+  }
 }

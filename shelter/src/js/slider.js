@@ -1,27 +1,73 @@
 import{ Article } from './Article'
 import petsList from './pets.js'
-const slider = document.querySelector('.slider')
+const slider = document.querySelector('.slider__container')
+
+const next = document.querySelector('.slider__next')
+const prev = document.querySelector('.slider__prev')
 
 
+let isEnabled = true
+let arrayOfNumbers = new Array(petsList.length).fill(0).map((e,i) => i)
 
+let shuffle = shuffleObjects()
 
-
-function test() {
+function createSLiderRow(className = 'slider__row') {
   let template = document.createElement('ul')
-  template.className = 'slider__row'
-  let list = []
-  for(let i = 0; i < 3; i++) {
-    list.push(new Article(petsList[i]).buildArticle())
-  }
-  template.append(...list)
+  template.append(...shuffle().reduce((acc, curr) => {
+    acc.push(new Article(petsList[curr]).buildArticle())
+    return acc
+  }, []))
+  template.className = className
+
   slider.append(template)
-  // slider.append(new Article(petsList[0]).buildArticle())
 }
 
-test()
-
-// let test = [1, 2, 3, 4, 5, 6, 7, 8]
+createSLiderRow()
 
 
+next.addEventListener('click', ()=> {
+  rollTheCarousel('slider__row from-right', 'to-left')
+})
 
-// console.log(petsList.length);
+prev.addEventListener('click', ()=> {
+  rollTheCarousel('slider__row from-left', 'to-right')
+})
+
+
+function rollTheCarousel(rowClassName, direction) {
+  if(isEnabled){
+    isEnabled = false
+    createSLiderRow(rowClassName)
+    slider.children[0].classList.add(direction)
+    slider.children[0].addEventListener('animationend', function(){
+      this.remove()
+    })
+    slider.children[1].addEventListener('animationend', function(){
+      this.classList.remove('from-right', 'from-left')
+      isEnabled = true
+    })
+  }
+}
+
+
+function randomArray(array) {
+  let arr = array
+  for(let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i+1))
+      const temp = arr[i]
+      arr[i] = arr[j]
+      arr[j] = temp
+  }
+  return arr
+}
+
+function shuffleObjects() {
+  let slides = randomArray(arrayOfNumbers)  /*1 2 3 4 5 6 7 8 */
+  let currentSlides
+  return ()=> {
+    currentSlides = slides.slice(0, 3) /* 1 2 3 */
+    slides.splice(0, 3) /*4 5 6 7 8 */
+    slides = [...randomArray(slides), ...currentSlides] /*4 5 6 7 8 +  1 2 3 */
+    return currentSlides
+  }
+}

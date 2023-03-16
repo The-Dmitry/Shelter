@@ -13,7 +13,7 @@ module.exports = {
     hints: false,
   },
   devtool: "source-map",
-  mode: 'production',
+  mode: 'development',
   module: {
     rules: [
         {
