@@ -3,15 +3,18 @@
   .container {
     display: flex;
     justify-content: flex-end;
-    background: url(../../images/additionDog.png) 25% 0 / contain no-repeat;
+    padding: 82px 0 98px 0;
+    background: url(../../images/additionDog.png) 20.5% 45%/42% no-repeat;
   }
 }
 .in-addition__content {
+  margin-right: 11.5%;
   @include articles(20px, 385px)
 }
 .title {
 }
 .in-addition__title {
+  max-width: 320px;
 }
 .in-addition__text {
   font-weight: 400;
@@ -21,13 +24,26 @@
   color: $color-dark-title;
 }
 .card-number {
+  display: flex;
+  gap: 15px;
+  padding: 10px 15px;
+  width: fit-content;
+  align-items: center;
   font-weight: 400;
   font-size: 2rem;
   line-height: 115%;
   letter-spacing: 0.06em;
   color: $color-dark-title;
+  background: $color-primary;
+  border-radius: 9px;
+  &::before {
+    content: url(../../images/icons/credit-card.svg);
+    display: flex;
+    height: 23px;
+  }
 }
 .about__policy {
+  max-width: 384px;
   font-family: 'Arial';
   font-style: italic;
   font-weight: 400;

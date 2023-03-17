@@ -18,7 +18,6 @@ function createSLiderRow(className = 'slider__row') {
     return acc
   }, []))
   template.className = className
-
   slider.append(template)
 }
 
@@ -34,7 +33,7 @@ prev.addEventListener('click', ()=> {
 })
 
 
-function rollTheCarousel(rowClassName, direction) {
+function rollTheCarousel(rowClassName, direction,) {
   if(isEnabled){
     isEnabled = false
     createSLiderRow(rowClassName)
@@ -71,3 +70,12 @@ function shuffleObjects() {
     return currentSlides
   }
 }
+
+
+slider.addEventListener('click', function(e){
+  if(e.target.closest('.pet-card')){
+    let objectId = e.target.closest('.pet-card').getAttribute('data-id')
+    
+  }
+  
+})

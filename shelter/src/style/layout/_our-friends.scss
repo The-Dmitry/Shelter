@@ -1,11 +1,14 @@
 .our-friends {
-  padding: 81px 40px 96px 40px;
+  padding: 79px 40px 100px 40px;
   @include alternative-background;
   .container {
     display: flex;
     flex-direction: column;
     gap: 60px;
     align-items: center;
+    .button {
+      margin-top: -4px;
+    }
   }
 }
 
@@ -16,3 +19,4 @@
   margin: 0 auto;
   text-align: center;
 }
+
