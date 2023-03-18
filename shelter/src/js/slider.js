@@ -1,5 +1,8 @@
 import{ Article } from './Article'
+import{ Modal } from './Modal'
 import petsList from './pets.js'
+import { showModal } from './modal-window'
+
 const slider = document.querySelector('.slider__container')
 
 const next = document.querySelector('.slider__next')
@@ -71,11 +74,9 @@ function shuffleObjects() {
   }
 }
 
+const body = document.querySelector('body')
 
-slider.addEventListener('click', function(e){
-  if(e.target.closest('.pet-card')){
-    let objectId = e.target.closest('.pet-card').getAttribute('data-id')
-    
-  }
-  
-})
+slider.addEventListener('click', showModal)
+
+
+

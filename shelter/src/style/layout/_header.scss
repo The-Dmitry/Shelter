@@ -36,6 +36,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 440px;
+  
 }
 .navigation__item {
 }
@@ -45,4 +46,14 @@
   font-size: 1.5rem;
   line-height: 160%;
   color: $color-grey;
+  
+}
+
+.current-page {
+  position: relative;
+  color: $color-light;
+  border-bottom: 3px solid $color-primary;
+  &::after {
+
+  }
 }

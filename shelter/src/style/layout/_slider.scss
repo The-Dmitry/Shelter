@@ -29,15 +29,16 @@
   transform: rotate(180deg);
 }
 .slider-button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   border: 2px solid $color-primary;
   border-radius: 100px;
   background-color: transparent;
   width: 52px;
   height: 52px;
-  position: relative;
   &::after {
     content: url(../../images/icons/arrow.svg);
   }
@@ -89,7 +90,7 @@
     left: 0%;
   }
   100% {
-    left: -120%;
+    left: -110%;
 
   }
 }
@@ -99,7 +100,7 @@
     left: 0%;
   }
   100% {
-    left: 120%;
+    left: 110%;
 
   }
 }
