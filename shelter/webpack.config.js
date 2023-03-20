@@ -3,11 +3,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: {
+    main: './src/main.js',
+    pets: './src/pets.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    assetModuleFilename: 'assets/[hash][ext]'
+    assetModuleFilename: 'assets/[hash][ext]',
+    clean: true,
   },
   performance: {
     hints: false,
@@ -39,8 +43,9 @@ module.exports = {
     ]
   },
   plugins : [
-    new HtmlWebpackPlugin({ /*title: 'Base',*/ template: './src/main.html', filename: 'main.html', minify: false}),
-    new MiniCssExtractPlugin({ filename: 'style.css' })
+    new HtmlWebpackPlugin({ /*title: 'Base',*/ template: './src/main.html', filename: 'main.html', chunks: ["main"] , minify: false}),
+    new HtmlWebpackPlugin({ /*title: 'Base',*/ template: './src/pets.html', filename: 'pets.html', chunks: ["pets"] , minify: false}),
+    new MiniCssExtractPlugin({ /*filename: '[name].[contenthash].css'*/ })
   ],
   devServer: {
     hot: true,

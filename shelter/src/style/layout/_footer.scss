@@ -1,7 +1,7 @@
 .footer {
   
   height: 100%;
-  // height: 294px;
+  max-height: 350px;
   @include dark-background;
   .container {
     display: flex;

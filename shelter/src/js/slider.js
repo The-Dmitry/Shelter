@@ -2,6 +2,7 @@ import{ Article } from './Article'
 import{ Modal } from './Modal'
 import petsList from './pets.js'
 import { showModal } from './modal-window'
+import randomArray from './randomArray'
 
 const slider = document.querySelector('.slider__container')
 
@@ -52,16 +53,7 @@ function rollTheCarousel(rowClassName, direction,) {
 }
 
 
-function randomArray(array) {
-  let arr = array
-  for(let i = arr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i+1))
-      const temp = arr[i]
-      arr[i] = arr[j]
-      arr[j] = temp
-  }
-  return arr
-}
+
 
 function shuffleObjects() {
   let slides = randomArray(arrayOfNumbers)  /*1 2 3 4 5 6 7 8 */

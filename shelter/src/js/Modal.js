@@ -30,7 +30,6 @@ export class Modal {
     
     modalContent.append(name, type, description, infoList)
     modal.append(modalImg, modalContent, button)
-    console.log(modal);
     return modal
   }
 
