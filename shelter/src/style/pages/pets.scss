@@ -59,13 +59,12 @@ body {
 .our-friends {
   flex: 1 1 auto;
   // height: 100%;
-  padding: 80px 40px 100px 40px;
+  padding: 80px 40px 101px 40px;
   background: #F6F6F6;
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 45px;
     height: 100%;
   }
 }
@@ -73,14 +72,18 @@ body {
 .our-friends__title {
   max-width: 400px;
   text-align: center;
+  margin-bottom: 58px;
 }
 
 .our-friends-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 10px;
   row-gap: 30px;
   width: 100%;
+  margin-bottom: 52px;
+
 }
 
 .our-friends__pagination {
@@ -88,21 +91,29 @@ body {
   gap: 20px;
 }
 
-.pagination__item {
+.pagination__button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 52px;
   height: 52px;
-  border: 2px solid #CDCDCD;
+  border: 2px solid $color-primary;
   border-radius: 100px;
-
+  background-color: transparent;
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: $color-dark-buttons
+  text-align: center;
+  color: $color-dark-buttons;
+  cursor: pointer;
+
+  &:disabled {
+    border: 2px solid $color-grey;
+    color: $color-grey;
+    cursor: auto;
+  }
 }
 .pagination {
 }
@@ -111,6 +122,7 @@ body {
 .previous {
 }
 .current {
+  background-color: $color-primary;
 }
 .next {
 }
