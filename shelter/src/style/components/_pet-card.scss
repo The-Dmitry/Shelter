@@ -9,6 +9,7 @@
   border-radius: 9px;
   overflow: hidden;
   cursor: pointer;
+  transition: all linear .2s;
 }
 .pet-card__image {
   position: relative;
@@ -32,4 +33,13 @@
   margin-bottom: 30px;
   background-color: transparent;
   border: 2px solid $color-primary;
+}
+
+
+@media (hover: hover) {
+  .pet-card:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: $color-light
+  }
+
 }

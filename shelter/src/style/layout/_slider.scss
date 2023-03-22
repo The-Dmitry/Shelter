@@ -39,8 +39,14 @@
   background-color: transparent;
   width: 52px;
   height: 52px;
+  transition: background-color linear .3s;
   &::after {
     content: url(../../images/icons/arrow.svg);
+  }
+  @media (hover:hover) {
+    &:hover {
+      background-color: $color-primary-light;
+    }
   }
 }
 

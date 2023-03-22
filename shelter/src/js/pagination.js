@@ -64,17 +64,20 @@ function changePage(e) {
   }
   if(e.target.classList.contains('next')) {
     currentPage++
+    insertArticles(currentPage)
   }
   if(e.target.classList.contains('previous')) {
     currentPage--
+    insertArticles(currentPage)
   }
   if(e.target.classList.contains('start')) {
     currentPage = 0
+    insertArticles(currentPage)
   }
   if(e.target.classList.contains('end')) {
     currentPage = splittedArray.length - 1
+    insertArticles(currentPage)
   }
-  insertArticles(currentPage)
   currentIndicator.textContent = currentPage+1
   switchPaginationButtons(this.children)
 }

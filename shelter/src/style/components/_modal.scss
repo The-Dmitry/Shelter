@@ -20,6 +20,7 @@
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   border-radius: 9px;
   color: #000000;
+  animation: opacity linear .4s;
 }
 .modal__image {
   border-radius: 9px;
@@ -108,5 +109,15 @@
     &:hover {
       background-color: $color-primary-light;
     }
+  }
+}
+
+
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

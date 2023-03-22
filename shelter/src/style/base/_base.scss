@@ -19,6 +19,10 @@ html {
 .header {
   padding: 0 40px;
   
+  @media (max-width: 1135px) {
+    padding: 0 30px;
+    
+  }
 }
 
 .title {

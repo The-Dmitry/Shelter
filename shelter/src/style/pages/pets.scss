@@ -42,6 +42,11 @@ body {
 
 .navigation__link {
   color: $color-dark-title;
+  @media (hover: hover) {
+    &:hover {
+      color: $color-dark-buttons;
+    }
+  }
 }
 
 .current-page {
@@ -107,13 +112,21 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   color: $color-dark-buttons;
+  transition: background-color linear .3s;
   cursor: pointer;
 
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-primary-light
+    }
+  }
   &:disabled {
     border: 2px solid $color-grey;
     color: $color-grey;
+    background-color: transparent;
     cursor: auto;
   }
+
 }
 .pagination {
 }

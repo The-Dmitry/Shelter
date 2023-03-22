@@ -10,4 +10,13 @@
   outline: none;
   border: none;
   cursor: pointer;
+  transition: all linear .3s;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $color-primary-light;
+    }
+  
+  }
 }
+

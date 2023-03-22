@@ -15,13 +15,35 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  
+  @media (hover: hover) {
+    &:hover .logo__title::after {
+      left: 0;
+      width: 100%;
+    }
+  }
 }
+
+
+
 .logo__title {
+  position: relative;
   color: $color-primary;
   font-weight: 400;
   font-size: 3.2rem;
   line-height: 110%;
   letter-spacing: 0.06em;
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background-color: $color-primary;
+    border-radius: 10px;
+    transition: all linear .3s;
+  }
 }
 .logo__subtitle {
   color: $color-light;
@@ -46,7 +68,13 @@
   font-size: 1.5rem;
   line-height: 160%;
   color: $color-grey;
-  
+  transition: color linear .2s;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-light;
+    }
+  }
 }
 
 .current-page {
