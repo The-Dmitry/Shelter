@@ -6,14 +6,46 @@
     padding-bottom: 114px;
   }
 
+  @media (max-width: 850px) {
+    .container {
+      justify-content: center;
+      padding-bottom: 83%;
+      background: url(../../images/aboutPets.png) 50% 84% / 42.3% no-repeat;
+    }
+  }
+  @media (max-width: 450px) {
+    .container {
+      justify-content: center;
+      padding-bottom: 160%;
+      background: url(../../images/aboutPets.png) 50% 93% / 95.3% no-repeat;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 0 25px;
+  }
 }
 .about__content {
   @include articles(25px, 432px);
   margin: 96px 14.4% 0 0;
+
+  @media (max-width: $tablet) {
+    margin: 80px 3% 0 0;
+  }
+  @media (max-width: 850px) {
+    margin: 80px 0 0 0;
+  }
+  @media (max-width: 500px) {
+    margin: 43px 0 0 0;
+    align-items: center;
+    text-align: justify;
+  }
 }
 .about__title {
   max-width: 370px;
-
+  @media (max-width: 500px) {
+    max-width: 290px;
+  }
 }
 
 .about__text {
@@ -22,4 +54,7 @@
   font-size: 1.5rem;
   line-height: 160%;
   color: $color-dark-text;
+  @media (max-width: 500px) {
+    text-align: justify;
+  }
 }

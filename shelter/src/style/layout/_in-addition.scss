@@ -6,15 +6,57 @@
     padding: 82px 0 98px 0;
     background: url(../../images/additionDog.png) 20.5% 45%/42% no-repeat;
   }
+
+  @media (max-width: 1200px) {
+    .container {
+      background-position: 7.5% 45%;
+      background-size: 50%;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      justify-content: center;
+      padding: 82px 0 59.2% 0;
+      background-position: 50% 81%;
+      background-size: 72%;
+    }
+  }
+  @media (max-width: 400px) {
+    .container {
+      justify-content: center;
+      padding: 42px 0 77% 0;
+      background-position: 50% 90%;
+      background-size: 92%;
+    }
+  }
+  @media (max-width: 330px) {
+    padding: 0 18px
+  }
 }
 .in-addition__content {
   margin-right: 11.5%;
-  @include articles(20px, 385px)
+  @include articles(20px, 385px);
+
+  @media (max-width: 1200px) {
+    margin-right: 0;
+    margin-left: 3px;
+  }
+  @media (max-width: 670px) {
+    max-width: 352px;
+    align-items: center;
+  }
+  @media (max-width: 330px) {
+    gap: 22.5px;
+  }
 }
 .title {
 }
 .in-addition__title {
   max-width: 320px;
+  @media (max-width: 400px) {
+    max-width: 229px;
+  }
 }
 .in-addition__text {
   font-weight: 400;
@@ -22,6 +64,10 @@
   line-height: 110%;
   letter-spacing: 0.06em;
   color: $color-dark-title;
+  
+  @media (max-width: 400px) {
+    letter-spacing: normal;
+  }
 }
 .card-number {
   display: flex;
@@ -36,13 +82,19 @@
   color: $color-dark-title;
   background: $color-primary;
   border-radius: 9px;
+  cursor: pointer;
   &::before {
     content: url(../../images/icons/credit-card.svg);
     display: flex;
     height: 23px;
   }
+
+  @media (max-width: 400px) {
+    font-size: 1.5rem;
+    box-sizing: border-box;
+  }
 }
-.about__policy {
+.in-addition__policy {
   max-width: 384px;
   font-family: 'Arial';
   font-style: italic;
@@ -50,4 +102,8 @@
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: $color-dark-italic;
+
+  @media (max-width: 500px) {
+    text-align: justify;
+  }
 }

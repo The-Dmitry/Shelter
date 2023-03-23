@@ -6,8 +6,19 @@
     flex-direction: column;
     gap: 60px;
     align-items: center;
-    .button {
-      margin-top: -4px;
+  }
+  @media (max-width: 1170px) {
+    padding: 79px 30px 100px 30px;
+    
+  }
+  @media (max-width: 1170px) {
+    padding: 79px 15px 100px 15px;
+    
+  }
+  @media (max-width: 500px) {
+    padding: 43px 15px 42px 15px;
+    .container {
+      gap: 42px;
     }
   }
 }
@@ -18,5 +29,9 @@
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+}
+
+.our-friends__button {
+  width: 261px;
 }
 

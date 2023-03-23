@@ -8,6 +8,7 @@
 @import '../components/buttons';
 @import '../components/pet-card';
 @import '../components/modal';
+@import '../components/burger';
 
 @import '../layout/header';
 @import '../layout/footer';
@@ -31,7 +32,6 @@ body {
 }
 
 .header {
-  height: 120px;
   margin-bottom: 0;
 }
 
@@ -39,6 +39,8 @@ body {
 .logo__subtitle {
   color: $color-dark-title;
 }
+
+
 
 .navigation__link {
   color: $color-dark-title;
@@ -65,6 +67,12 @@ body {
   flex: 1 1 auto;
   // height: 100%;
   padding: 80px 40px 101px 40px;
+  @media (max-width: 780px) {
+    padding: 80px 60px 76px 60px;
+  }
+  @media (max-width: 700px) {
+    padding: 42px 10px 43px 10px;
+  }
   background: #F6F6F6;
   .container {
     display: flex;
@@ -78,6 +86,13 @@ body {
   max-width: 400px;
   text-align: center;
   margin-bottom: 58px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 29px;
+  }
+  @media (max-width: $mobile) {
+    margin-bottom: 42px;
+  }
 }
 
 .our-friends-list {
@@ -87,13 +102,37 @@ body {
   column-gap: 10px;
   row-gap: 30px;
   width: 100%;
-  margin-bottom: 52px;
+  margin-bottom: 60px;
 
+  @media (max-width: 1189px) {
+    justify-content: space-evenly;
+    // column-gap: 0;
+    margin-bottom: 40px;
+    & .pet-card:nth-child(n+7) {
+      display: none;
+    }
+    
+  }
+
+  @media (max-width: 589px) {
+    & .pet-card:nth-child(n+4) {
+      display: none;
+    }
+  }
 }
+
+
 
 .our-friends__pagination {
   display: flex;
-  gap: 20px;
+  // gap: 20px;
+  max-width: 340px;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 370px) {
+
+  }
 }
 
 .pagination__button {
@@ -135,7 +174,6 @@ body {
 .previous {
 }
 .current {
-  background-color: $color-primary;
 }
 .next {
 }

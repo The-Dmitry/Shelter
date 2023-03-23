@@ -7,6 +7,10 @@
   justify-content: space-between;
   gap: 10px;
   width: 100%;
+  @media (max-width: 460px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
 
 .slider__container {
@@ -17,29 +21,40 @@
   justify-content: center;
   max-width: 990px;
   width: 100%;
+  @media (max-width: 460px) {
+    order: 1;
+  }
+  
 }
 
 
 .slider__next {
   order: 3;
+  @media (max-width: 400px) {
+    margin: 9px -13px 0 0;
+  }
+  
   
 }
 .slider__prev {
   order: 1;
   transform: rotate(180deg);
+  @media (max-width: 400px) {
+    margin: 9px 0 0 -13px;
+  }
 }
 .slider-button {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  padding: 21px;
   border: 2px solid $color-primary;
   border-radius: 100px;
   background-color: transparent;
   width: 52px;
   height: 52px;
   transition: background-color linear .3s;
+  cursor: pointer;
   &::after {
     content: url(../../images/icons/arrow.svg);
   }
@@ -58,6 +73,15 @@
   gap: 10px;
   width: 100%;
   animation: 1s ease-in-out;
+  @media (max-width: 950px) {
+    justify-content: space-evenly;
+  }
+  @media (max-width: 830px) {
+    justify-content: space-between;
+  }
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
 }
 
 /* Slider cards you can find in components/pets-card*/
@@ -108,5 +132,17 @@
   100% {
     left: 110%;
 
+  }
+}
+
+
+@media (max-width: 950px) {
+  .pet-card:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .pet-card:nth-child(n+2) {
+    display: none;
   }
 }

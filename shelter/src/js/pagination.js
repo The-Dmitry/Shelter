@@ -21,17 +21,17 @@ let splittedArray
 
 
 window.onload = function(){
-  let width = paginationContainer.offsetWidth
+  let width = document.body.offsetWidth
   console.log(width);
-  if(width < 550) {
+  if(width < 590) {
     splitTheArray(allObjects , 3)
     return
   }
-  if(width < 830) {
+  if(width < 1190) {
     splitTheArray(allObjects , 6)
     return
   }
-  if(width > 829) {
+  if(width > 1189) {
     splitTheArray(allObjects , 8)
     return
   }
@@ -95,5 +95,4 @@ function switchPaginationButtons(buttons) {
 
 list.addEventListener('click', showModal)
 pagination.addEventListener('click', changePage)
-
 

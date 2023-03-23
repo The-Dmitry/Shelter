@@ -1,5 +1,8 @@
 .not-only {
   padding-top: 180px;
+  @media (max-width: $tablet) {
+    padding-top: 78px;
+  }
   // height: 700px;
   @include dark-background;
   .container {
@@ -7,8 +10,26 @@
     height: 100%;
     background: url(../../images/mainPuppy.png) 100% 100% / contain no-repeat;
     padding: 150px 0 242px 0;
+    @media (max-width: 1170px) {
+      background: url(../../images/mainPuppy.png) 109% 100% / 61% no-repeat;
+      
+    }
     @media (max-width: $tablet) {
-      // justify-content: center;
+      justify-content: center;
+      padding: 60px 0 693px 0;
+      background-position: 50% 100%;
+    }
+    @media (max-width: 865px) {
+      background-position: 102% 101%;
+      background-size: 81%;
+    }
+    @media (max-width: 600px) {
+      padding: 60px 0 92% 0;
+    }
+    @media (max-width: 350px) {
+      padding: 60px 0 126% 0;
+      background-position: 107% 101%;
+      background-size: 88%;
     }
   }
   
@@ -22,6 +43,11 @@
 .not-only__content {
   padding-top: 13px;
   @include articles(42px, 460px);
+
+  @media (max-width: $mobile) {
+    align-items: center;
+    gap: 40px;
+  }
 }
 .title {
 }
@@ -32,6 +58,11 @@
   font-weight: 400;
   line-height: 130%;
   color: $color-light;
+  @media (max-width: 380px) {
+    max-width: 230px;
+    font-size: 2.5rem;
+    letter-spacing: 0.06em;
+  }
 }
 .not-only__text {
   font-family: 'Arial';
@@ -39,7 +70,13 @@
   font-size: 1.5rem;
   line-height: 160%;
   color: $color-grey;
+  @media (max-width: 380px) {
+    text-align: center;
+  }
 }
-.button {
-
+.not-only__button {
+  width: 207px;
+  @media (max-width: $tablet) {
+    align-self: center;
+  }
 }

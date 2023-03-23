@@ -1,5 +1,8 @@
 .button {
-  padding: 15px 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
   background: $color-primary;
   border-radius: 100px;
   font-weight: 400;
