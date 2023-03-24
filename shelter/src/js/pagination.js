@@ -4,8 +4,6 @@ import { showModal } from './modal-window'
 import randomArray from './randomArray'
 
 
-// 1190 910 630
-
 const list = document.querySelector('.our-friends-list')
 const pagination = document.querySelector('.pagination')
 const paginationContainer = document.querySelector('.our-friends-list')
@@ -22,8 +20,7 @@ let splittedArray
 
 window.onload = function(){
   let width = document.body.offsetWidth
-  console.log(width);
-  if(width < 590) {
+  if(width < 570) {
     splitTheArray(allObjects , 3)
     return
   }

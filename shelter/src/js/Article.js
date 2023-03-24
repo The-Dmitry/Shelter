@@ -32,10 +32,6 @@ export class Article{
 
     card.append(div, sliderText, button)
     card.setAttribute('data-id', this.id)
-
-    // card.addEventListener('click', function(){
-    //   console.log(this.getAttribute('data-id'));
-    // })
     return card
   }
 
