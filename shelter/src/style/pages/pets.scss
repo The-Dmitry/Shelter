@@ -164,6 +164,11 @@ body {
 
 }
 
+.current {
+  background-color: $color-primary;
+  cursor: auto;
+}
+
 .pet-card {
   animation: rotate-card linear .3s;
 }
