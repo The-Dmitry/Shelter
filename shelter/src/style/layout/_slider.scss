@@ -1,12 +1,10 @@
-.our-friends__slider {
-}
-
 .slider {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   width: 100%;
+
   @media (max-width: 460px) {
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -21,28 +19,29 @@
   justify-content: center;
   max-width: 990px;
   width: 100%;
+
   @media (max-width: 460px) {
     order: 1;
   }
-  
 }
-
 
 .slider__next {
   order: 3;
+
   @media (max-width: 400px) {
     margin: 9px -13px 0 0;
   }
-  
-  
 }
+
 .slider__prev {
   order: 1;
   transform: rotate(180deg);
+
   @media (max-width: 400px) {
     margin: 9px 0 0 -13px;
   }
 }
+
 .slider-button {
   display: flex;
   justify-content: center;
@@ -58,6 +57,7 @@
   &::after {
     content: url(../../images/icons/arrow.svg);
   }
+
   @media (hover:hover) {
     &:hover {
       background-color: $color-primary-light;
@@ -73,12 +73,15 @@
   gap: 10px;
   width: 100%;
   animation: 1s ease-in-out;
+
   @media (max-width: 950px) {
     justify-content: space-evenly;
   }
+
   @media (max-width: 830px) {
     justify-content: space-between;
   }
+
   @media (max-width: 700px) {
     justify-content: center;
   }
@@ -95,7 +98,6 @@
 
 .to-right {
   animation-name: right;
-  // animation-direction: reverse;
 }
 
 
@@ -105,6 +107,7 @@
   animation-name: left;
   animation-direction: reverse;
 }
+
 .from-right {
   position: absolute;
   top: 0;
@@ -112,16 +115,12 @@
   animation-direction: reverse;
 }
 
-
-
-
 @keyframes left {
   0% {
     left: 0%;
   }
   100% {
     left: -110%;
-
   }
 }
 
@@ -131,7 +130,6 @@
   }
   100% {
     left: 110%;
-
   }
 }
 
@@ -141,6 +139,7 @@
     display: none;
   }
 }
+
 @media (max-width: 700px) {
   .pet-card:nth-child(n+2) {
     display: none;

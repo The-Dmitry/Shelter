@@ -4,10 +4,6 @@ export class Article{
     this.name = name
     this.img = img
   }
-
-  getData(){
-    console.log(this.name);
-  }
   
   buildArticle(){
     let card = document.createElement('li')

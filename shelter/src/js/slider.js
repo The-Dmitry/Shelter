@@ -66,7 +66,6 @@ function shuffleObjects() {
   }
 }
 
-const body = document.querySelector('body')
 
 slider.addEventListener('click', showModal)
 

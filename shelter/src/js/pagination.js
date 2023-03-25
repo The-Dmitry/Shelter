@@ -6,7 +6,6 @@ import randomArray from './randomArray'
 
 const list = document.querySelector('.our-friends-list')
 const pagination = document.querySelector('.pagination')
-const paginationContainer = document.querySelector('.our-friends-list')
 const currentIndicator = document.querySelector('.current')
 
 let currentPage = 0

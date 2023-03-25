@@ -13,6 +13,7 @@
       background: url(../../images/aboutPets.png) 50% 84% / 42.3% no-repeat;
     }
   }
+
   @media (max-width: 450px) {
     .container {
       justify-content: center;
@@ -32,9 +33,11 @@
   @media (max-width: $tablet) {
     margin: 80px 3% 0 0;
   }
+
   @media (max-width: 850px) {
     margin: 80px 0 0 0;
   }
+  
   @media (max-width: 500px) {
     margin: 43px 0 0 0;
     align-items: center;

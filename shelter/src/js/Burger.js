@@ -68,7 +68,7 @@ export class Burger {
     this.button.classList.add('burger_active')
     setTimeout(()=> {
       this.menu.classList.add('burger-menu_active')
-    }, 160)
+    }, 300)
   }
 
   closeBurger() {
@@ -78,20 +78,13 @@ export class Burger {
     this.button.classList.remove('burger_active')
     setTimeout(()=> {
       this.overlay.remove()
-    }, 160)
+    }, 300)
   }
 
   toggleBurger() {
     if(!this.active) {
       this.openBurger()
     } else {
-      this.closeBurger()
-    }
-    
-  }
-
-  handleBurger(e) {
-    if(!e.target.closest('.burger-menu') || e.target.closest('.burger-menu__item')) {
       this.closeBurger()
     }
   }

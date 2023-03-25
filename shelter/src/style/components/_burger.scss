@@ -10,11 +10,11 @@
   display: none;
   z-index: 5;
   transition: all linear .3s;
+
   &_active {
     transform: rotate(-90deg);
   }
   
-
   &::after,
   &::before {
     content: '';
@@ -25,9 +25,11 @@
     height: 2px;
     background-color: $color-primary;
   }
+
   &::after {
     top: 15%;
   }
+
   &::before {
     bottom: 15%;
   }
@@ -54,7 +56,6 @@
   background-color: rgba(41, 41, 41, 0.6);
 }
 
-
 .burger-menu {
   display: flex;
   flex-direction: column;
@@ -70,10 +71,8 @@
   background-color: $color-dark-buttons;
   transition: all linear .3s;
 }
-.burger-menu__item {
-}
+
 .burger-menu__link {
-  
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;

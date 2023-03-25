@@ -1,5 +1,4 @@
 .header {
-  // @include basic-block-size;
   height: 120px;
   margin-bottom: -120px;
   &__container {
@@ -49,6 +48,7 @@
     transition: all linear .3s;
   }
 }
+
 .logo__subtitle {
   color: $color-light;
   font-family: 'Arial';
@@ -58,17 +58,16 @@
   letter-spacing: 0.1em;
   margin-left: 3px;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 443px;
+  
   @media (max-width: 710px) {
     display: none;
   }
-}
-
-.navigation__item {
 }
 
 .navigation__link {

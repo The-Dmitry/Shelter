@@ -6,7 +6,6 @@ import { Burger } from './js/Burger'
 
 
 
-// let state = false
 const burgerButton = document.querySelector('.burger')
 let menu = new Burger(true, burgerButton)
 

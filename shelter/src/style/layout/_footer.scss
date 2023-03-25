@@ -28,18 +28,19 @@
   }
   @media (max-width: 670px) {
     .container {
-      // background-size: 43%;
       flex-direction: column;
       align-items: center;
       gap: 40px;
     }
   }
+
   @media (max-width: 550px) {
     .container {
       padding: 31px 0 95% 0;
       background-size: 67%;
     }
   }
+
   @media (max-width: 370px) {
     .container {
       padding: 31px 0 102% 0;
@@ -47,8 +48,6 @@
       gap: 37px;
     }
   }
-  
-
 }
 
 .footer-link {
@@ -98,30 +97,26 @@
   }
 
 }
-.footer-info__contact {
-}
-.title {
-}
-.footer__title {
-  
-}
 
 .footer-contact__email {
   &::before {
     content: url(../../images/icons/icon-email.svg);
   }
 }
+
 .footer-contact__phone {
   &::before {
     content: url(../../images/icons/icon-phone.svg);
   }
 }
+
 .footer-info__address {
   gap: 32px;
   @media (max-width: 350px) {
     gap: 38px;
   }
 }
+
 .footer-address__address {
   &::before {
     content: url(../../images/icons/icon-marker.png);
