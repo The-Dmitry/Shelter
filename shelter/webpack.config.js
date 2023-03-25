@@ -16,8 +16,8 @@ module.exports = {
   performance: {
     hints: false,
   },
-  devtool: "source-map",
-  mode: 'development',
+  // devtool: "source-map",
+  mode: 'production',
   module: {
     rules: [
         {
