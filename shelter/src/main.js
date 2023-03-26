@@ -12,5 +12,3 @@ let menu = new Burger(true, burgerButton)
 burgerButton.addEventListener('click', function(e) {
   menu.toggleBurger()
 })
-
-console.log(burgerButton);
