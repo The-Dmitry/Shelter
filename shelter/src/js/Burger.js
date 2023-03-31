@@ -66,8 +66,10 @@ export class Burger {
     })
     document.body.classList.toggle('body-locked')
     this.button.classList.add('burger_active')
+    this.button.disabled = true
     setTimeout(()=> {
       this.menu.classList.add('burger-menu_active')
+      this.button.disabled = false
     }, 300)
   }
 
@@ -76,8 +78,10 @@ export class Burger {
     this.menu.classList.remove('burger-menu_active')
     document.body.classList.toggle('body-locked')
     this.button.classList.remove('burger_active')
+    this.button.disabled = true
     setTimeout(()=> {
       this.overlay.remove()
+      this.button.disabled = false
     }, 300)
   }
 
