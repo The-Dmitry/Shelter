@@ -54,6 +54,21 @@
   width: 100%;
   height: 100%;
   background-color: rgba(41, 41, 41, 0.6);
+  animation: opacity linear .3s;
+}
+
+.transitioned {
+  opacity: 0;
+  transition: opacity linear .3s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .burger-menu {

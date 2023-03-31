@@ -77,6 +77,7 @@ export class Burger {
     this.active = false
     this.menu.classList.remove('burger-menu_active')
     document.body.classList.toggle('body-locked')
+    this.overlay.classList.add('transitioned')
     this.button.classList.remove('burger_active')
     this.button.disabled = true
     setTimeout(()=> {
