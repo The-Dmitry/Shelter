@@ -20,7 +20,7 @@ export class Burger {
     if(this.page) {
       menuItems = `
       <li class="burger-menu__item">
-          <a href="" class="burger-menu__link burger-menu__link_active">About the shelter</a>
+          <a href="#" class="burger-menu__link burger-menu__link_active">About the shelter</a>
         </li>
         <li class="burger-menu__item">
           <a href="./pets.html" class="burger-menu__link">Our pets</a>
